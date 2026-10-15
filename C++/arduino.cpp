@@ -25,9 +25,7 @@ void loop() {
   pinMode(triggerPin, INPUT);
   long duracion = pulseIn(triggerPin, HIGH);
   
-  // --- CAMBIO PEDAGÓGICO ---
-  // El Arduino ya no calcula la distancia en el código. 
-  // Solo imprime el tiempo de vuelo crudo para que el estudiante lo calcule.
+  //  imprime el tiempo de vuelo crudo para que el estudiante lo calcule.
   Serial.print("Tiempo de vuelo (us): ");
   Serial.println(duracion);
   
